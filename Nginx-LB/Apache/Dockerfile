@@ -3,7 +3,7 @@ FROM httpd:alpine
 # Define user and group
 ENV APACHE_RUN_USER=choreo
 ENV APACHE_RUN_GROUP=choreo
-ENV PORT=80
+ENV PORT=8080
 
 # Create a non-root user and group
 RUN addgroup -S ${APACHE_RUN_USER} && adduser -S ${APACHE_RUN_USER} -G ${APACHE_RUN_GROUP}
